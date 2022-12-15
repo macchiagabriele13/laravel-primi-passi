@@ -20,18 +20,34 @@
 
     </nav>
 
-    <div class="p-5 mb-4 bg-light rounded-3">
-        <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">Benvenuto su Laravel</h1>
-            <p class="col-md-8 fs-4">Un posto magico e meraviglioso pieno di insidie ben nascoste, sennò non sarebbe il lato oscuro della forza, no?</p>
-            <div class="d-flex flex-column ">
-                <small>Secondo me non serviva un bottone qui, però...</small>
-                <div>
-                    <button class="btn btn-primary btn-lg" type="button">Cliccami, dai!</button>
+    <section id="Hero_title" class="py-3">
+
+        <div class="text-center">
+            <h1>Ecco chi siamo veramente!!!</h1>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                @foreach($people as $person)
+                <div class="col">
+                    <div>
+                        <img src="../img/gabriele.png" alt="">
+                    </div>
+                    <div>
+                        <h3>{{$role}}</h3>
+                        <p></p>
+                    </div>
+
                 </div>
+                @endforeach
+
+
             </div>
         </div>
-    </div>
+
+    </section>
+
+
 
 
 

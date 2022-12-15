@@ -15,4 +15,33 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
+Route::get('/about', function () {
+    $data = [
+        'people' => [
+            [
+                'image' => '../../resources/img/simone.png',
+                'role' => 'Leader Supremo',
+                'description' => 'Di che cosa, bene, non si sà'
+
+            ],
+
+            [
+                'image' => '../../resources/img/gabriele.png',
+                'role' => 'Altissimo Leader',
+                'description' => 'Di che cosa, bene, non si sà'
+
+            ],
+
+            [
+                'image' => '../../resources/img/alessio.png',
+                'role' => 'Leader dei Leader',
+                'description' => 'Di che cosa, bene, non si sà'
+
+            ],
+        ]
+    ];
+
+    return view('about', $data);
+})->name('about');

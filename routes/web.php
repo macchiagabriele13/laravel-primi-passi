@@ -21,21 +21,21 @@ Route::get('/about', function () {
     $data = [
         'people' => [
             [
-                'image' => '../../resources/img/simone.png',
+                'image' => '../img/simone.png',
                 'role' => 'Leader Supremo',
                 'description' => 'Di che cosa, bene, non si sà'
 
             ],
 
             [
-                'image' => '../../resources/img/gabriele.png',
+                'image' => '../img/gabriele.png',
                 'role' => 'Altissimo Leader',
                 'description' => 'Di che cosa, bene, non si sà'
 
             ],
 
             [
-                'image' => '../../resources/img/alessio.png',
+                'image' => '../img/alessio.png',
                 'role' => 'Leader dei Leader',
                 'description' => 'Di che cosa, bene, non si sà'
 

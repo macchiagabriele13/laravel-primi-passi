@@ -31,11 +31,11 @@
                 @foreach($people as $person)
                 <div class="col">
                     <div>
-                        <img src="../img/gabriele.png" alt="">
+                        <img src="{{$person['image']}}" alt="">
                     </div>
                     <div>
-                        <h3>{{$role}}</h3>
-                        <p></p>
+                        <h3>{{$person['role']}}</h3>
+                        <p>{{$person['description']}}</p>
                     </div>
 
                 </div>
